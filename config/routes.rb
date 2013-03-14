@@ -1,5 +1,7 @@
 Thebrownbook::Application.routes.draw do
-  match 'home' => 'application#home'
+  root :to => 'application#index'
+  match 'home' => 'application#index'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
